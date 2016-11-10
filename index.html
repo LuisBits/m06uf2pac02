@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UF2_PAC02</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Permanent+Marker" rel="stylesheet">
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario de Registro</h1>
+    </header>
+
+    <main>
+        <section>
+            <form name="miFormulario" action="mensaje.html" onsubmit="return comprobar(this)">
+                <div class="fila">
+                    <span class="etiqueta">Nombre:</span>
+                    <!-- Inlcuyo autofocus en el primer campo. -->
+                    <input type="text" name="nombre" autofocus>
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">Apellidos:</span>
+                    <input type="text" name="apellidos">
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">e-mail:</span>
+                    <input type="email" name="mail">
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">Sexo:</span>
+                    <div id="genero">
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="mujer">Mujer</label>
+                    </div>
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">Aficiones:</span>
+                    <select name="aficiones" multiple>
+                        <option value="teatro">Teatro</option>
+                        <option value="cine">Cine</option>
+                        <option value="pintura">Pintura</option>
+                        <option value="danza">Danza</option>
+                        <option value="lectura">Lectura</option>
+                    </select>
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">Contraseña:</span>
+                    <input type="password" name="psw">
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">Confirmar contraseña:</span>
+                    <input type="password" name="pswOk">
+                </div>
+                <br>
+                <div class="fila">
+                    <span class="etiqueta">Votación:</span>
+                    <select name="voto">
+                        <option value="">Elige...</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="mBueno">Muy bueno</option>
+                        <option value="bueno">Bueno</option>
+                        <option value="regular">Regular</option>
+                        <option value="malo">Malo</option>
+                    </select>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <div class="fila">
+                    <input type="checkbox" name="acepta" id="acepta"> Aceptar condiciones de la web.
+                </div>
+                <br>
+                <br>
+                <button type="submit" value="submit">Enviar</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset" value="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h4>M06_UF2_PAC02</h4>
+            <p>By Luis Sánchez 2016</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
